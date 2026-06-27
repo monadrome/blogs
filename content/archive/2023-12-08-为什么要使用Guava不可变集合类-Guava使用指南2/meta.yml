@@ -1,0 +1,39 @@
+title: 为什么要使用Guava不可变集合类（Guava使用指南2）
+slug: 2023-12-08-为什么要使用Guava不可变集合类-Guava使用指南2
+summary: ''
+author: EricLin
+created: '2023-12-08'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7310033153904705551
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 526
+  likes: 6
+  collects: 5
+  source: html2md

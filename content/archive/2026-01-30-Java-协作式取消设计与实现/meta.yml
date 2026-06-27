@@ -1,0 +1,39 @@
+title: Java 协作式取消设计与实现
+slug: 2026-01-30-Java-协作式取消设计与实现
+summary: ''
+author: EricLin
+created: '2026-01-30'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7600955777315848230
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 194
+  likes: 3
+  collects: 10
+  source: nuxt

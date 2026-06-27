@@ -1,0 +1,39 @@
+title: 拥抱流畅接口模式，6个例子提升你的代码能力
+slug: 2025-04-30-拥抱流畅接口模式-6个例子提升你的代码能力
+summary: ''
+author: EricLin
+created: '2025-04-30'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7498730222536654863
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 461
+  likes: 8
+  collects: 7
+  source: nuxt

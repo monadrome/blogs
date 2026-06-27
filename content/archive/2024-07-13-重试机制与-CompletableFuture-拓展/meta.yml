@@ -1,0 +1,39 @@
+title: 重试机制与 CompletableFuture 拓展
+slug: 2024-07-13-重试机制与-CompletableFuture-拓展
+summary: ''
+author: EricLin
+created: '2024-07-13'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7390671667314130963
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 701
+  likes: 6
+  collects: 8
+  source: nuxt

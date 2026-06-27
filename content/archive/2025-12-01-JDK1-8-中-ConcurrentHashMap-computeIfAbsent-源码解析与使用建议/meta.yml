@@ -1,0 +1,39 @@
+title: JDK1.8+ 中 ConcurrentHashMap#computeIfAbsent 源码解析与使用建议
+slug: 2025-12-01-JDK1-8-中-ConcurrentHashMap-computeIfAbsent-源码解析与使用建议
+summary: ''
+author: EricLin
+created: '2025-12-01'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7578215424678412351
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 182
+  likes: 4
+  collects: 2
+  source: html2md

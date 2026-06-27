@@ -1,0 +1,39 @@
+title: 线程池中的线程补偿思想
+slug: 2026-03-03-线程池中的线程补偿思想
+summary: ''
+author: EricLin
+created: '2026-03-03'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7612288284083159066
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 45
+  likes: 1
+  collects: 1
+  source: html

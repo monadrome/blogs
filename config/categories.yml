@@ -1,0 +1,26 @@
+# 掘金分类映射
+categories:
+  前端:
+    id: "6809637767543259144"
+    aliases: ["frontend", "web", "css", "javascript", "react", "vue"]
+  后端:
+    id: "6809637769959178254"
+    aliases: ["backend", "java", "spring", "python", "go", "数据库"]
+  Android:
+    id: "6809637776260759560"
+    aliases: ["android", "kotlin"]
+  iOS:
+    id: "6809637771518472197"
+    aliases: ["ios", "swift", "objectivec"]
+  人工智能:
+    id: "6809637777523272712"
+    aliases: ["ai", "ml", "llm", "深度学习", "机器学习"]
+  开发工具:
+    id: "6809637773990930440"
+    aliases: ["tools", "ide", "git", "docker", "devops"]
+  代码人生:
+    id: "6809637781306523662"
+    aliases: ["career", "life", "思考", "随笔"]
+  阅读:
+    id: "6809637785292423182"
+    aliases: ["reading", "book", "读书"]

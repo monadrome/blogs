@@ -1,0 +1,39 @@
+title: CompletableFuture 超时功能有大坑！使用不当直接生产事故！
+slug: 2024-09-08-CompletableFuture-超时功能有大坑-使用不当直接生产事故
+summary: ''
+author: EricLin
+created: '2024-09-08'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7411686792342274089
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 6326
+  likes: 56
+  collects: 104
+  source: nuxt

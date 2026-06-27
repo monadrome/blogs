@@ -1,0 +1,39 @@
+title: 不要滥用静态对象和静态方法
+slug: 2024-12-12-不要滥用静态对象和静态方法
+summary: ''
+author: EricLin
+created: '2024-12-12'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7447447071524962338
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 219
+  likes: 3
+  collects: 0
+  source: html2md

@@ -1,0 +1,39 @@
+title: 字节二面：字符串常量池如何优化？
+slug: 2025-01-20-字节二面-字符串常量池如何优化
+summary: ''
+author: EricLin
+created: '2025-01-20'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7461618121209151488
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 211
+  likes: 2
+  collects: 0
+  source: html2md

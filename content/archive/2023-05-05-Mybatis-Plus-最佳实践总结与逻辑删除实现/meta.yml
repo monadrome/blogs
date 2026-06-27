@@ -1,0 +1,39 @@
+title: Mybatis Plus 最佳实践总结与逻辑删除实现
+slug: 2023-05-05-Mybatis-Plus-最佳实践总结与逻辑删除实现
+summary: ''
+author: EricLin
+created: '2023-05-05'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7229536038715539512
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 1277
+  likes: 4
+  collects: 12
+  source: html2md

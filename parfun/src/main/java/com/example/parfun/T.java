@@ -22,6 +22,10 @@ public class T {
 //        System.out.println(stopwatch.elapsed(TimeUnit.MILLISECONDS));
         Throwable canceled = new CancellationException("canceled");
         Throwables.throwIfInstanceOf(canceled, CancellationException.class);
-        Throwables.throwIfInstanceOf(canceled, IOException.class);
+        try {
+            Throwables.throwIfInstanceOf(canceled, IOException.class);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

@@ -1,0 +1,39 @@
+title: 理解函数式LazyList和Stream：函数式编程中的懒计算与应用
+slug: 2024-09-26-理解函数式LazyList和Stream-函数式编程中的懒计算与应用
+summary: ''
+author: EricLin
+created: '2024-09-26'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7418717006973763623
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 238
+  likes: 6
+  collects: 1
+  source: html2md

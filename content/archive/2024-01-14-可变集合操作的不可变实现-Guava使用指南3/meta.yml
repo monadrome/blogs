@@ -1,0 +1,39 @@
+title: 可变集合操作的不可变实现（Guava使用指南3）
+slug: 2024-01-14-可变集合操作的不可变实现-Guava使用指南3
+summary: ''
+author: EricLin
+created: '2024-01-14'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7323501076534820874
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 695
+  likes: 1
+  collects: 0
+  source: html2md

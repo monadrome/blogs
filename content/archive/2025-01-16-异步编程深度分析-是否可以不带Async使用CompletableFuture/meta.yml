@@ -1,0 +1,39 @@
+title: 异步编程深度分析：是否可以不带Async使用CompletableFuture？
+slug: 2025-01-16-异步编程深度分析-是否可以不带Async使用CompletableFuture
+summary: ''
+author: EricLin
+created: '2025-01-16'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7460437932454805544
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 411
+  likes: 8
+  collects: 6
+  source: html2md

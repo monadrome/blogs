@@ -1,0 +1,39 @@
+title: 没有杯子的世界：OOP设计思想的应用实践
+slug: 2023-03-20-没有杯子的世界-OOP设计思想的应用实践
+summary: ''
+author: EricLin
+created: '2023-03-20'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7212560932537417783
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 158
+  likes: 2
+  collects: 1
+  source: html2md

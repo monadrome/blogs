@@ -1,0 +1,39 @@
+title: 消灭空指针异常，Lombok 给我们的优雅解决方案
+slug: 2025-04-23-消灭空指针异常-Lombok-给我们的优雅解决方案
+summary: ''
+author: EricLin
+created: '2025-04-23'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7496051843538452543
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 2121
+  likes: 22
+  collects: 38
+  source: html2md

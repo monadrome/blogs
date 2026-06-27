@@ -1,0 +1,39 @@
+title: 【异步编程实战】如何实现超时功能（以CompletableFuture为例）
+slug: 2024-09-07-异步编程实战-如何实现超时功能-以CompletableFuture为例
+summary: ''
+author: EricLin
+created: '2024-09-07'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7411345808527147062
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 1134
+  likes: 10
+  collects: 16
+  source: html2md

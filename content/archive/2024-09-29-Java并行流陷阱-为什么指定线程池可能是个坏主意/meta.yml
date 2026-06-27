@@ -1,0 +1,39 @@
+title: Java并行流陷阱：为什么指定线程池可能是个坏主意
+slug: 2024-09-29-Java并行流陷阱-为什么指定线程池可能是个坏主意
+summary: ''
+author: EricLin
+created: '2024-09-29'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7419869992617050152
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 546
+  likes: 8
+  collects: 5
+  source: html2md

@@ -1,0 +1,39 @@
+title: 警惕AI幻觉！Deepseek对Java线程池中断机制的理解有误
+slug: 2025-04-24-警惕AI幻觉-Deepseek对Java线程池中断机制的理解有误
+summary: ''
+author: EricLin
+created: '2025-04-24'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7496712869170855977
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 227
+  likes: 7
+  collects: 1
+  source: html2md

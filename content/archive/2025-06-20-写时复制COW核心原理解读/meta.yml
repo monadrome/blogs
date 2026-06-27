@@ -1,0 +1,39 @@
+title: 写时复制COW核心原理解读
+slug: 2025-06-20-写时复制COW核心原理解读
+summary: ''
+author: EricLin
+created: '2025-06-20'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7517532575008768063
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 344
+  likes: 5
+  collects: 3
+  source: html2md

@@ -1,0 +1,39 @@
+title: 如何安全发布 CompletableFuture ？Java9 新增方法鉴赏
+slug: 2024-09-15-如何安全发布-CompletableFuture-Java9-新增方法鉴赏
+summary: ''
+author: EricLin
+created: '2024-09-15'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7414734229059764265
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 230
+  likes: 3
+  collects: 2
+  source: html2md

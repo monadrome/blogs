@@ -1,0 +1,39 @@
+title: 并发编程与视图——简单方法返回异步 Map<Key, Data>
+slug: 2025-06-23-并发编程与视图-简单方法返回异步-Map-Key-Data
+summary: ''
+author: EricLin
+created: '2025-06-23'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7518450939427520523
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 134
+  likes: 3
+  collects: 0
+  source: html2md

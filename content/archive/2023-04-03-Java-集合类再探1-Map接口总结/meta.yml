@@ -1,0 +1,39 @@
+title: Java 集合类再探1：Map接口总结
+slug: 2023-04-03-Java-集合类再探1-Map接口总结
+summary: ''
+author: EricLin
+created: '2023-04-03'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7217810344697020472
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 215
+  likes: 0
+  collects: 0
+  source: html2md

@@ -1,0 +1,39 @@
+title: CompletableFuture典型错误 —— 代码出自某大厂
+slug: 2025-04-25-CompletableFuture典型错误-代码出自某大厂
+summary: ''
+author: EricLin
+created: '2025-04-25'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7496876253865082932
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 6147
+  likes: 82
+  collects: 130
+  source: html2md

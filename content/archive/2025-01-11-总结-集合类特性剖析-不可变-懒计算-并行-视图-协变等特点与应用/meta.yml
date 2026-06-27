@@ -1,0 +1,39 @@
+title: 【总结】集合类特性剖析【不可变、懒计算、并行、视图、协变等特点与应用】
+slug: 2025-01-11-总结-集合类特性剖析-不可变-懒计算-并行-视图-协变等特点与应用
+summary: ''
+author: EricLin
+created: '2025-01-11'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7458234120318648335
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 243
+  likes: 6
+  collects: 3
+  source: html2md

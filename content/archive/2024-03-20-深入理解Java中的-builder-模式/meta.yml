@@ -1,0 +1,39 @@
+title: 深入理解Java中的 builder 模式
+slug: 2024-03-20-深入理解Java中的-builder-模式
+summary: ''
+author: EricLin
+created: '2024-03-20'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7348245676890587186
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 1290
+  likes: 3
+  collects: 3
+  source: html2md

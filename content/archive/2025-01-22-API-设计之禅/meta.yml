@@ -1,0 +1,39 @@
+title: API 设计之禅
+slug: 2025-01-22-API-设计之禅
+summary: ''
+author: EricLin
+created: '2025-01-22'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7462648428003590184
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 143
+  likes: 2
+  collects: 0
+  source: html2md

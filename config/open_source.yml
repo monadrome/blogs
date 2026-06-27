@@ -1,0 +1,33 @@
+# 开源博客同步配置
+open_source:
+  enabled: true
+  github_repo: ""  # GitHub 仓库地址，例如：https://github.com/username/blog.git
+  local_dir: ""    # 本地克隆目录（可选，自动生成）
+  branch: "main"
+  articles_dir: "articles"
+  index_file: "INDEX.md"
+  auto_commit: true
+  auto_push: false
+  commit_prefix: "docs: "
+
+  # 同步规则
+  sync_rules:
+    # 同步哪些平台的文章
+    platforms: ["juejin"]
+    # 只同步已发布的文章
+    status_filter: "published"
+    # 同步后更新 frontmatter
+    update_frontmatter: true
+
+  # frontmatter 模板
+  frontmatter_template: |
+    ---
+    title: "{title}"
+    date: {date}
+    url: {juejin_url}
+    views: {views}
+    likes: {likes}
+    collects: {collects}
+    category: {category}
+    tags: [{tags}]
+    ---

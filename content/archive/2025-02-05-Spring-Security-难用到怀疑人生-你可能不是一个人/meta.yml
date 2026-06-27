@@ -1,0 +1,39 @@
+title: Spring Security 难用到怀疑人生？你可能不是一个人！
+slug: 2025-02-05-Spring-Security-难用到怀疑人生-你可能不是一个人
+summary: ''
+author: EricLin
+created: '2025-02-05'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7467503654695026722
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 4736
+  likes: 35
+  collects: 52
+  source: html2md

@@ -1,0 +1,39 @@
+title: 【硬核总结】如何轻松实现只计算一次、惰性求值？良性竞争条件的广泛使用可能超过你的想象！String实际上是可变的？
+slug: 2025-02-28-硬核总结-如何轻松实现只计算一次-惰性求值-良性竞争条件的广泛使用可能超过你的想象-String实际上是可变的
+summary: ''
+author: EricLin
+created: '2025-02-28'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7475994574529740839
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 207
+  likes: 7
+  collects: 3
+  source: html2md

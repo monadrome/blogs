@@ -1,0 +1,39 @@
+title: 使用Guava轻松搞定树结构！无需使用其他工具类！
+slug: 2024-09-25-使用Guava轻松搞定树结构-无需使用其他工具类
+summary: ''
+author: EricLin
+created: '2024-09-25'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7418378848402653194
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 3097
+  likes: 31
+  collects: 90
+  source: html2md

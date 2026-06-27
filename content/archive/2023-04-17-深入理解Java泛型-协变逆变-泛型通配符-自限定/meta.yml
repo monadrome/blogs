@@ -1,0 +1,39 @@
+title: 深入理解Java泛型、协变逆变、泛型通配符、自限定
+slug: 2023-04-17-深入理解Java泛型-协变逆变-泛型通配符-自限定
+summary: ''
+author: EricLin
+created: '2023-04-17'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7222921573623201851
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 1413
+  likes: 13
+  collects: 30
+  source: html2md

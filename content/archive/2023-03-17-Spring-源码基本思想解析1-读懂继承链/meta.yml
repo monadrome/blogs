@@ -1,0 +1,39 @@
+title: Spring 源码基本思想解析1--读懂继承链
+slug: 2023-03-17-Spring-源码基本思想解析1-读懂继承链
+summary: ''
+author: EricLin
+created: '2023-03-17'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7211446753144832037
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 154
+  likes: 1
+  collects: 0
+  source: html2md

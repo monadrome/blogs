@@ -1,0 +1,39 @@
+title: 告别强制转换：使用设计模式实现 Guava ListenableFuture 与 TTL 优雅融合
+slug: 2025-04-21-告别强制转换-使用设计模式实现-Guava-ListenableFuture-与-TTL-优雅融合
+summary: ''
+author: EricLin
+created: '2025-04-21'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7495005551308324927
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 298
+  likes: 6
+  collects: 3
+  source: html2md

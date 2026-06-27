@@ -1,0 +1,39 @@
+title: 函数式编程中函数有哪些玩法？(以Vavr为例)
+slug: 2024-09-17-函数式编程中函数有哪些玩法-以Vavr为例
+summary: ''
+author: EricLin
+created: '2024-09-17'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7414702307810230323
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 200
+  likes: 3
+  collects: 1
+  source: html2md

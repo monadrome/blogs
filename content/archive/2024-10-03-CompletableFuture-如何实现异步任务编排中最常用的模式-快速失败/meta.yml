@@ -1,0 +1,39 @@
+title: CompletableFuture 如何实现异步任务编排中最常用的模式——快速失败
+slug: 2024-10-03-CompletableFuture-如何实现异步任务编排中最常用的模式-快速失败
+summary: ''
+author: EricLin
+created: '2024-10-03'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7420597224546091059
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 968
+  likes: 9
+  collects: 11
+  source: html2md

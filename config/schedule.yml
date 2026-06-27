@@ -1,0 +1,15 @@
+# 定时发布调度配置
+scheduler:
+  enabled: false
+  check_interval: 600  # 秒（10 分钟检查一次）
+  timezone: "Asia/Shanghai"
+
+# 发布时间窗口（避免深夜发布）
+publish_window:
+  start: "08:00"
+  end: "23:00"
+
+# 默认发布策略
+defaults:
+  platforms: ["juejin", "wechat"]
+  stagger_delay: 300  # 多平台发布间隔（秒）

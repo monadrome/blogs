@@ -1,0 +1,39 @@
+title: 深入理解Java中的双重检查锁DCL
+slug: 2024-06-09-深入理解Java中的双重检查锁DCL
+summary: ''
+author: EricLin
+created: '2024-06-09'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7377683138236940351
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 889
+  likes: 4
+  collects: 3
+  source: html2md

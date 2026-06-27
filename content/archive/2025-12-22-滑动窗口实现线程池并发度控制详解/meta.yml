@@ -1,0 +1,39 @@
+title: 滑动窗口实现线程池并发度控制详解
+slug: 2025-12-22-滑动窗口实现线程池并发度控制详解
+summary: ''
+author: EricLin
+created: '2025-12-22'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7586182451598557230
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 341
+  likes: 11
+  collects: 16
+  source: nuxt

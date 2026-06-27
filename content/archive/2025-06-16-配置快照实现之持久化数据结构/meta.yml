@@ -1,0 +1,39 @@
+title: 配置快照实现之持久化数据结构
+slug: 2025-06-16-配置快照实现之持久化数据结构
+summary: ''
+author: EricLin
+created: '2025-06-16'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7515820821739962383
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 108
+  likes: 3
+  collects: 1
+  source: html2md

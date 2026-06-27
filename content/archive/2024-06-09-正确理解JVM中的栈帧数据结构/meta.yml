@@ -1,0 +1,39 @@
+title: 正确理解JVM中的栈帧数据结构
+slug: 2024-06-09-正确理解JVM中的栈帧数据结构
+summary: ''
+author: EricLin
+created: '2024-06-09'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7377645747448578083
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 92
+  likes: 1
+  collects: 0
+  source: html2md

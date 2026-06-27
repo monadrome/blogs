@@ -1,0 +1,39 @@
+title: 集合类再探2：为什么我们需要不可变类型
+slug: 2023-04-06-集合类再探2-为什么我们需要不可变类型
+summary: ''
+author: EricLin
+created: '2023-04-06'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7218797742641774650
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 276
+  likes: 0
+  collects: 0
+  source: html2md

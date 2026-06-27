@@ -1,0 +1,39 @@
+title: 很多人都不知道函数竟然是有颜色的！—— 深入理解异步编程的本质（上）
+slug: 2026-03-10-很多人都不知道函数竟然是有颜色的-深入理解异步编程的本质-上
+summary: ''
+author: EricLin
+created: '2026-03-10'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7614769648597827634
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 99
+  likes: 2
+  collects: 3
+  source: html

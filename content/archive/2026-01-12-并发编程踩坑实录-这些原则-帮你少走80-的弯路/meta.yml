@@ -1,0 +1,39 @@
+title: 并发编程踩坑实录：这些原则，帮你少走80%的弯路
+slug: 2026-01-12-并发编程踩坑实录-这些原则-帮你少走80-的弯路
+summary: ''
+author: EricLin
+created: '2026-01-12'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7593692797765468202
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 107
+  likes: 3
+  collects: 0
+  source: html2md

@@ -1,0 +1,39 @@
+title: 深入理解 Java 引用类
+slug: 2024-06-10-深入理解-Java-引用类
+summary: ''
+author: EricLin
+created: '2024-06-10'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7377662459920957477
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 741
+  likes: 3
+  collects: 2
+  source: html2md

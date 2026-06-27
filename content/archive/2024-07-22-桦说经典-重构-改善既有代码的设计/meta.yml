@@ -1,0 +1,39 @@
+title: 【桦说经典】重构：改善既有代码的设计
+slug: 2024-07-22-桦说经典-重构-改善既有代码的设计
+summary: ''
+author: EricLin
+created: '2024-07-22'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7393688446038425634
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 81
+  likes: 0
+  collects: 0
+  source: html2md

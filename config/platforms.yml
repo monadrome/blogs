@@ -1,0 +1,29 @@
+platforms:
+  juejin:
+    enabled: true
+    base_url: "https://api.juejin.cn"
+    auth_type: "cookie"
+    cookie_env: "JUEJIN_COOKIE"
+    default_category: "6809637769959178254"  # 后端
+    default_is_original: true
+    request_delay: 1.0
+    upload_images: true
+    retry_count: 3
+
+  wechat:
+    enabled: true
+    auth_type: "api"
+    app_id_env: "WECHAT_APP_ID"
+    app_secret_env: "WECHAT_APP_SECRET"
+    theme: "grace"
+    cite_mode: true
+    cover_required: true
+
+  git:
+    enabled: true
+    repo_dir: "."
+    branch: "main"
+    commit_prefix: "publish:"
+    auto_push: false
+    files_pattern:
+      - "content/published/**"

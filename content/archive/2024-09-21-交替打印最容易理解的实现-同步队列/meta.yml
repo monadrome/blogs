@@ -1,0 +1,39 @@
+title: 交替打印最容易理解的实现——同步队列
+slug: 2024-09-21-交替打印最容易理解的实现-同步队列
+summary: ''
+author: EricLin
+created: '2024-09-21'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7532925096828026899
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 0
+  likes: 0
+  collects: 0
+  source: html2md

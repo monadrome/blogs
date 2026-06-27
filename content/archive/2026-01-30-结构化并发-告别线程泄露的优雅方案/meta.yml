@@ -1,0 +1,39 @@
+title: 结构化并发：告别线程泄露的优雅方案
+slug: 2026-01-30-结构化并发-告别线程泄露的优雅方案
+summary: ''
+author: EricLin
+created: '2026-01-30'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7600863478929621011
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 98
+  likes: 2
+  collects: 4
+  source: html2md

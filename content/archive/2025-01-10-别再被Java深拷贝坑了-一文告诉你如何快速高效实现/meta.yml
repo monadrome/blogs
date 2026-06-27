@@ -1,0 +1,39 @@
+title: 别再被Java深拷贝坑了！一文告诉你如何快速高效实现
+slug: 2025-01-10-别再被Java深拷贝坑了-一文告诉你如何快速高效实现
+summary: ''
+author: EricLin
+created: '2025-01-10'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7458196268901646345
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 182
+  likes: 4
+  collects: 1
+  source: html2md

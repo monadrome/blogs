@@ -1,0 +1,39 @@
+title: 'Tip: 如何使用AI提升学习效率'
+slug: 2026-01-30-Tip-如何使用AI提升学习效率
+summary: ''
+author: EricLin
+created: '2026-01-30'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7600967006893293577
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 134
+  likes: 0
+  collects: 0
+  source: html2md

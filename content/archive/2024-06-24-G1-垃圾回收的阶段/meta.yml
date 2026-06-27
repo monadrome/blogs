@@ -1,0 +1,39 @@
+title: G1 垃圾回收的阶段
+slug: 2024-06-24-G1-垃圾回收的阶段
+summary: ''
+author: EricLin
+created: '2024-06-24'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7383374760576614419
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 466
+  likes: 2
+  collects: 3
+  source: html2md

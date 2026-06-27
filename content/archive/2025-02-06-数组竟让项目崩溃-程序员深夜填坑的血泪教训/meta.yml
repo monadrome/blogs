@@ -1,0 +1,39 @@
+title: 数组竟让项目崩溃!程序员深夜填坑的血泪教训！
+slug: 2025-02-06-数组竟让项目崩溃-程序员深夜填坑的血泪教训
+summary: ''
+author: EricLin
+created: '2025-02-06'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7467884443748876315
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 298
+  likes: 4
+  collects: 0
+  source: html2md

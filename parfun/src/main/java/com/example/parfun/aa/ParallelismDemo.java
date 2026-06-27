@@ -99,13 +99,20 @@ public class ParallelismDemo {
 
     }
 
-    @Value
     static class ConcurrentLimitExecutor<V> {
-        ListeningExecutorService pool;
-        int parallelism;
-        BlockingQueue<Future<V>> q;
-        ExecutorCompletionService<V> cs = new ExecutorCompletionService<>(pool, q);
-        ListeningExecutorService submitter = MoreExecutors.listeningDecorator(Executors.newSingleThreadExecutor());
+        final ListeningExecutorService pool;
+        final int parallelism;
+        final BlockingQueue<Future<V>> q;
+        final ExecutorCompletionService<V> cs;
+        final ListeningExecutorService submitter;
+
+        ConcurrentLimitExecutor(ListeningExecutorService pool, int parallelism, BlockingQueue<Future<V>> q) {
+            this.pool = pool;
+            this.parallelism = parallelism;
+            this.q = q;
+            this.cs = new ExecutorCompletionService<>(pool, q);
+            this.submitter = MoreExecutors.listeningDecorator(Executors.newSingleThreadExecutor());
+        }
 
         public List<ListenableFuture<V>> submitAll(List<Callable<V>> tasks) {
             ImmutableList<ListenableFuture<V>> result = IntStream.range(0, parallelism)

@@ -1,0 +1,39 @@
+title: 写出线程安全的代码太难了！用 Guava 实现运行时检测死锁
+slug: 2025-12-22-写出线程安全的代码太难了-用-Guava-实现运行时检测死锁
+summary: ''
+author: EricLin
+created: '2025-12-22'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7586504691845234697
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 169
+  likes: 4
+  collects: 1
+  source: html2md

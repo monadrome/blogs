@@ -1,0 +1,39 @@
+title: CompletableFuture 复杂问题与最佳实践（笔记）
+slug: 2025-06-30-CompletableFuture-复杂问题与最佳实践-笔记
+summary: ''
+author: EricLin
+created: '2025-06-30'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7521554369479213096
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 692
+  likes: 8
+  collects: 15
+  source: ''

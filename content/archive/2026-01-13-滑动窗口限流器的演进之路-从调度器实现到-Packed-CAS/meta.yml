@@ -1,0 +1,39 @@
+title: 滑动窗口限流器的演进之路：从调度器实现到 Packed CAS
+slug: 2026-01-13-滑动窗口限流器的演进之路-从调度器实现到-Packed-CAS
+summary: ''
+author: EricLin
+created: '2026-01-13'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7594642978695757887
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 139
+  likes: 2
+  collects: 1
+  source: html2md

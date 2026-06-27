@@ -1,0 +1,39 @@
+title: CompletableFuture 的第四种调用模式
+slug: 2025-08-06-CompletableFuture-的第四种调用模式
+summary: ''
+author: EricLin
+created: '2025-08-06'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7534891542233727019
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 597
+  likes: 5
+  collects: 13
+  source: html2md

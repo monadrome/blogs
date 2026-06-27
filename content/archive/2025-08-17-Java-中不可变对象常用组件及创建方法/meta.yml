@@ -1,0 +1,39 @@
+title: Java 中不可变对象常用组件及创建方法
+slug: 2025-08-17-Java-中不可变对象常用组件及创建方法
+summary: ''
+author: EricLin
+created: '2025-08-17'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7538868042962239497
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 192
+  likes: 2
+  collects: 5
+  source: html2md

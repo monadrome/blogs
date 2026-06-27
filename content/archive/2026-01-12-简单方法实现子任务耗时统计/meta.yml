@@ -1,0 +1,39 @@
+title: 简单方法实现子任务耗时统计
+slug: 2026-01-12-简单方法实现子任务耗时统计
+summary: ''
+author: EricLin
+created: '2026-01-12'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7594153083879718963
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 104
+  likes: 2
+  collects: 0
+  source: html2md

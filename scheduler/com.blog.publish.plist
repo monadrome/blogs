@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.blog.publish</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/qinghualin/Documents/projects/blog/scripts/scheduler.py</string>
+        <string>--once</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <array>
+        <!-- 每小时检查一次 -->
+        <dict>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/qinghualin/Documents/projects/blog</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/qinghualin/Documents/projects/blog/logs/scheduler.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/qinghualin/Documents/projects/blog/logs/scheduler-error.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+</dict>
+</plist>

@@ -1,0 +1,39 @@
+title: 提示词工程的艺术
+slug: 2026-03-12-提示词工程的艺术
+summary: ''
+author: EricLin
+created: '2026-03-12'
+language: zh-CN
+original: true
+category: 后端
+tags: []
+platforms:
+  juejin:
+    status: published
+    article_id: ''
+    draft_id: ''
+    published_at: ''
+    url: https://juejin.cn/post/7615923123328434186
+  wechat:
+    status: draft
+    media_id: ''
+    published_at: ''
+    url: ''
+  github:
+    status: draft
+    commit_hash: ''
+    pushed_at: ''
+assets:
+  cover: ''
+  images: []
+  slides: ''
+schedule:
+  publish_at: ''
+  platforms:
+  - juejin
+  - wechat
+original_stats:
+  views: 32
+  likes: 2
+  collects: 2
+  source: html
