@@ -22,7 +22,7 @@ JDK 给了你 `ExecutorService`、`CompletableFuture`、`ForkJoinPool`——工�
 
 ## 一、并发痛点与陷阱
 
-### 1.1 取消不了的线程
+### 1.1 石沉大海的取消信号
 
 ```java
 ExecutorService pool = Executors.newFixedThreadPool(10);
@@ -58,9 +58,9 @@ pool.submit(() -> {
 
 ```java
 // 外层：10 个任务提交到 FixedThreadPool(10)
-Par.map("shared-pool", orders, order -> {
+par.map("shared-pool", orders, order -> {
     // 内层：每个任务又提交 5 个子任务到同一个线程池
-    Par.map("shared-pool", order.getItems(), item -> process(item), opts);
+    par.map("shared-pool", order.getItems(), item -> process(item), opts);
     return order;
 }, opts);
 ```
@@ -86,6 +86,7 @@ Par.map("shared-pool", orders, order -> {
 如果并发编程的痛苦来自"选择太多"，那解法就是**减少选择**。
 
 ```java
+// par 是通过 Par.getInstance() 获取的单例，或通过依赖注入获取
 AsyncBatchResult<String> result = par.map(
     "io-pool",   // 线程池名称
     urls,        // 输入列表
@@ -112,7 +113,7 @@ all.orTimeout(30, TimeUnit.SECONDS).join();
 // 取消？第一个失败时取消其余的？自己实现
 ```
 
-至少 15 行样板代码，而且超时控制、失败取消、上下文传播全部要自己处理。`orTimeout` 还是 Java 9+ 才有的 API——Java 8 用户连这行都写不出来，得自己用 `ScheduledExecutorService` + `completeExceptionally` 手搓一个。
+至少 15 行样板代码，而且超时控制、失败取消、上下文传播全部要自己处理。`orTimeout` 是 Java 9+ 才有的 API——Java 8 用户需要借助 Guava 的 `FluentFuture.withTimeout()` 或自己用 `ScheduledExecutorService` + `completeExceptionally` 手搓一个（讽刺的是，parallel-in-scope 本身就基于 Guava，说明即使有 Guava 也还是不够用）。
 
 **对比 invokeAll：**
 
@@ -125,7 +126,7 @@ List<Future<String>> results = pool.invokeAll(callables); // 阻塞到全部完�
 
 `Par.map` 用**滑动窗口**解决了这两个问题。
 
-打个比方：`invokeAll` 就像一家餐厅把所有预约的客人全塞进大堂——100 个人同时挤进去，谁也坐不下。滑动窗口则是翻台制：大堂只有 10 个桌子（parallelism=10），客人走一桌才进一桌。大堂永远满座，但永远不会拥挤。
+打个比方：`invokeAll` 就像一家餐厅把所有预约的客人全塞进大堂——1000 个人同时挤进去，谁也坐不下。滑动窗口则是翻台制：大堂只有 10 个桌子（parallelism=10），客人走一桌才进一桌。大堂始终高效运转，既不空闲也不拥堵。
 
 > **翻台制，不是排队制。** 完成一个补一个，线程池永远满载但不溢出。
 
@@ -164,11 +165,10 @@ cancellationToken.lateBind(futures, timeout);
 
 > 注：以上是简化示意。实际实现通过 `ExecutorCompletionService` + `SettableFuture` 占位 + 独立的 `submitterPool` 阻塞循环完成滑动窗口调度，详见 `ConcurrentLimitExecutor.submitAll()` 源码。
 
-`lateBind()` 依次绑定三条链路：
+`lateBind()` 绑定两条链路：
 
 1. **父级取消传播** — 如果存在 parent token，监听 parent 的取消事件，级联取消
-2. **Fail-fast** — `Futures.allAsList(futures)` 将所有子 Future 绑定在一起，任一失败立即触发取消
-3. **超时** — `FluentFuture.withTimeout()` 在全局定时器上设置超时
+2. **Fail-fast + 超时** — `Futures.allAsList(futures)` 将所有子 Future 绑定在一起，任一失败立即触发取消；超时通过 `FluentFuture.withTimeout()` 嵌入同一条链式调用中，作为 allAsList 的超时包装
 
 **晚绑定的本质是显式分离"提交阶段"和"绑定阶段"。** 提交阶段只关心滑动窗口的调度逻辑，绑定阶段只关心取消和超时的语义。两个阶段各自独立，不会互相干扰。
 
@@ -184,7 +184,7 @@ cancellationToken.lateBind(futures, timeout);
 
 **传统做法的问题：** `Thread.interrupt()` 只设置一个 boolean 标志。你只知道"我被取消了"，不知道是哪个子任务失败触发的 fail-fast、还是整批超时、还是父任务级联传播。而且在高频循环中，你需要不断检查 `Thread.interrupted()`——这个检查本身不花钱，但如果你要在检查到中断时抛异常来中断执行流，`new InterruptedException()` 的 `fillInStackTrace()` 就是另一回事了。
 
-`Exception.fillInStackTrace()` 背后的栈帧收集，是 JVM 中最昂贵的常规操作之一。实际开销：大约占异常创建总耗时的 90%+，一次调约 1-5 微秒（取决于栈深度）。如果检查点每秒被调用 100 万次，那就是每秒 1-5 秒的 CPU 时间花在填栈上——这个开销是致命的。
+`Exception.fillInStackTrace()` 背后的栈帧收集，是 JVM 中最昂贵的常规操作之一。实际开销：大约占异常创建总耗时的 90%+，一次调约 1-5 微秒（取决于栈深度）。在高频场景下——比如每秒处理百万级小任务的循环体内——这个开销会累积到秒级，成为 CPU 瓶颈。
 
 parallel-in-scope 提供了两种取消异常：
 
@@ -204,17 +204,17 @@ Checkpoints.checkpoint("process-item", false); // 抛出 FatCancellationExceptio
 
 对比 `Thread.interrupt()`：中断标志是一个 boolean，你不知道是谁取消的、为什么取消。
 
-`CancellationTokenState` 用带符号的 int code 区分取消原因（以下列出取消相关状态，省略了 `SUCCESS` 和 `NO_OP`）：
+`CancellationTokenState` 用带符号的 int code 区分取消原因（以下列出取消相关状态，省略了 `SUCCESS` 和 `NO_OP`——它们的 code 为正数，不会与取消状态冲突）：
 
 | 状态 | Code | 含义 |
 |---|---|---|
 | `RUNNING` | 0 | 正常执行 |
 | `FAIL_FAST_CANCELED` | -1 | 某个子任务失败，触发 fail-fast |
 | `TIMEOUT_CANCELED` | -2 | 批次超时 |
-| `MUTUAL_CANCELED` | -3 | 多个取消源同时触发 |
+| `MUTUAL_CANCELED` | -3 | 外部手动取消（调用 `CancellationToken.cancel()`） |
 | `PROPAGATING_CANCELED` | -4 | 父任务取消，级联传播 |
 
-`shouldInterruptCurrentThread()` 方法简单判断 `code < 0`——如果是负数，说明被取消了，检查点立即抛出异常。
+`shouldInterruptCurrentThread()` 方法读取 `AtomicReference<CancellationTokenState>` 中的 state，判断 `code < 0`——如果是负数，说明被取消了，检查点立即抛出异常。底层是原子变量读取，开销极低。
 
 > 好的并发框架不仅要告诉你"任务被取消了"，还要告诉你"为什么被取消"。
 
@@ -227,7 +227,7 @@ Checkpoints.checkpoint("process-item", false); // 抛出 FatCancellationExceptio
 parallel-in-scope 的做法：CPU 密集型任务，宁可同步执行也不排队。
 
 ```java
-// CPU 密集型
+// CPU 密集型（parallelism 必须显式设置——cpuTask() 不设默认并行度，强制调用方根据任务特性决定；不设 timeout——计算任务的耗时取决于输入规模，不适合硬性超时）
 ParOptions cpuOpts = ParOptions.cpuTask("compute")
     .parallelism(Runtime.getRuntime().availableProcessors())
     .build();
@@ -245,14 +245,17 @@ ParOptions ioOpts = ParOptions.ioTask("fetchRemote")
 @Override
 public boolean offer(E e) {
     ParOptions opts = TaskScopeTl.getParallelOptions();
-    if (opts != null && (opts.getTaskType() == TaskType.CPU_BOUND || opts.isRejectEnqueue())) {
-        return false; // 触发 CallerRunsPolicy，调用方线程同步执行
+    if (opts != null && opts.getTaskType() == TaskType.CPU_BOUND) {
+        return false; // CPU 密集型任务不入队，触发 CallerRunsPolicy
     }
-    return delegate.offer(o);  // 组合模式，委托给内部队列
+    if (opts != null && opts.isRejectEnqueue()) {
+        return false; // 显式拒绝入队
+    }
+    return delegate.offer(e);  // 组合模式，委托给内部队列
 }
 ```
 
-`offer()` 返回 `false` 会触发 `ThreadPoolExecutor` 的 `RejectedExecutionHandler`（通常配置为 `CallerRunsPolicy`），让调用方线程同步执行该任务。
+`offer()` 返回 `false` 会触发 `ThreadPoolExecutor` 的 `RejectedExecutionHandler`。前提是你将拒绝策略配置为 `CallerRunsPolicy`（ParConfig 的推荐配置）——此时调用方线程会同步执行该任务。如果使用默认的 `AbortPolicy`，则会抛出 `RejectedExecutionException`。
 
 **为什么？**
 
@@ -288,6 +291,8 @@ private final ConcurrentHashMap<RelayItem, Object> curMap;     // 当前线程�
 
 通过 Alibaba TTL（TransmittableThreadLocal）的 `Transmitter.registerThreadLocal()` 注册，子线程创建时自动将父线程的 `curMap` 变为子线程的 `parentMap`。传播的内容包括：`CancellationToken`、`ParOptions`、任务名称、执行器名称。
 
+> **使用前提：** TTL 的跨线程传播需要拦截线程池的任务提交。parallel-in-scope 内部已经用 `TtlExecutors.getTtlExecutorService()` 装饰了线程池，用户无需额外配置。但如果你在框架外部自行创建线程池并提交任务，需要确保使用 TTL 装饰过的 ExecutorService，否则 ThreadRelay 的传播不会生效。
+
 **对比手动传参：**
 
 ```java
@@ -310,8 +315,8 @@ par.map("io-pool", urls, url -> fetch(url), opts);
 回到引言中的那个场景：
 
 ```java
-Par.map("shared-pool", orders, order -> {
-    Par.map("shared-pool", order.getItems(), item -> process(item), opts);
+par.map("shared-pool", orders, order -> {
+    par.map("shared-pool", order.getItems(), item -> process(item), opts);
     return order;
 }, opts);
 ```
@@ -320,7 +325,7 @@ Par.map("shared-pool", orders, order -> {
 
 这不是传统的锁死锁，线程 dump 里看不到 `BLOCKED` 状态。这是**线程池的死锁**——线程在 `Future.get()` 上等待，而不是在 `synchronized` 上等待。
 
-parallel-in-scope 的解决方案是 **请求级 DAG 图**。每次 `Par.map()` 调用时，`logTaskPair()` 记录一条从父任务到子任务的边，边的元数据包含并行度、任务类型、执行器名称、任务数量、超时时间：
+parallel-in-scope 的解决方案是 **请求级任务依赖图**。每次 `par.map()` 调用时，`logTaskPair()` 记录一条从父任务到子任务的边，边的元数据包含并行度、任务类型、执行器名称、任务数量、超时时间。请求结束时，在这个有向图上检测环路——有环意味着死锁风险：
 
 ```java
 // 请求入口
@@ -363,6 +368,8 @@ ParConfig config = ParConfig.builder()
 
 > 死锁检测不应该是事后分析工具，应该是运行时守护。问题在发生的瞬间就被发现。
 
+如果你的项目也有线程池死锁的困扰，从 `livelockDetectionEnabled(true)` 开始——一行配置，零代码改动。下次卡死时，日志中会直接告诉你环路在哪里。
+
 ---
 
 ## 八、IdeaGraveyard：比代码更重要的设计文档
@@ -384,7 +391,7 @@ fail-fast 是结构化并发的核心语义。允许"忽略失败继续跑"会�
 **替代方案：** 在任务函数内部 catch 异常，返回 `Optional<T>`：
 
 ```java
-Par.map("io-pool", urls, url -> {
+par.map("io-pool", urls, url -> {
     try {
         return Optional.of(httpClient.fetch(url));
     } catch (Exception e) {
@@ -428,6 +435,24 @@ Par.map("io-pool", urls, url -> {
 
 ---
 
+## 九、怎么验证"做对了"
+
+设计取舍说得再漂亮，没有测试验证就是空话。并发代码的测试难度远高于普通业务代码——你需要验证的不是"返回值对不对"，而是"时序对不对"、"取消传没传播"、"死锁检没检出"。
+
+parallel-in-scope 的测试策略围绕三个维度展开：
+
+**取消传播测试：** 构造嵌套 `Par.map` 场景，外层触发 fail-fast 后，验证内层的 `CancellationToken` 状态是否从 `RUNNING` 转为 `FAIL_FAST_CANCELED`。关键不是"结果对不对"，而是"状态转换发生在哪个时间点"。用 `Awaitility.await().atMost(5, SECONDS).until(() -> token.isCanceled())` 而不是 `Thread.sleep()`——后者会让测试要么太慢（等久了），要么不稳定（等短了）。
+
+**死锁检测测试：** 在测试环境构造共享线程池的嵌套调用，验证 `TaskGraph` 在请求结束时是否正确检出环路。测试的难点在于：死锁是概率性的（取决于线程调度），所以测试需要在循环中反复执行直到触发或超时。
+
+**SmartBlockingQueue 测试：** 提交 CPU 密集型任务到配置了 `CallerRunsPolicy` 的线程池，验证 `offer()` 返回 `false` 后任务确实在调用方线程执行（通过 `Thread.currentThread().getName()` 检查）。
+
+> 并发库的测试不是"跑通 CI"就够的。你需要构造时序敏感的场景，用确定性工具（Awaitility、CountDownLatch）替代不确定的 `Thread.sleep()`。
+
+除了功能测试，性能回归同样重要。`LeanCancellationException` 的"零开销"不是一句口号——通过 JMH benchmark 对比 `LeanCancellationException`、`FatCancellationException` 和标准 `new Exception()` 在高频检查点场景下的吞吐量，可以量化验证 `fillInStackTrace()` 覆写的实际收益。滑动窗口 vs `invokeAll` 的内存峰值对比也值得纳入 benchmark 套件。
+
+---
+
 ## 结语：什么是不该做的
 
 全文的设计取舍，可以浓缩为五条原则：
@@ -455,8 +480,6 @@ parallel-in-scope 有一些已知的局限，它们是刻意的设计选择：
 > 最好的并发框架不是让你能做更多事的框架，而是让你把精力花在业务上，而不是花在跟并发原语搏斗上。
 
 潜龙勿用——但如果用了，就用对。
-
-如果你的项目也有线程池死锁的困扰，试试在测试环境开启 `livelockDetectionEnabled(true)`——一行配置，零代码改动。至少，下次卡死的时候你能知道为什么。
 
 ---
 
