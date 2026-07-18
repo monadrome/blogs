@@ -1,0 +1,36 @@
+title: "AI Coding Agent 的行为操作系统：从 Memory 到 Harness 的全景指南"
+slug: "2026-06-27-claude-code-memory-harness"
+summary: "从身份、规则、技能和记忆四层模型出发，对比主流 AI Coding Agent 的行为控制机制，并总结 Harness Memory 的设计原则。"
+author: "EricLin"
+created: "2026-06-27"
+language: "zh-CN"
+original: true
+
+category: "开发工具"
+tags: ["AI Coding Agent", "Claude Code", "Memory", "Harness"]
+
+platforms:
+  juejin:
+    status: "draft"
+    article_id: ""
+    draft_id: ""
+    published_at: ""
+    url: ""
+  wechat:
+    status: "draft"
+    media_id: ""
+    published_at: ""
+    url: ""
+  github:
+    status: "draft"
+    commit_hash: ""
+    pushed_at: ""
+
+assets:
+  cover: ""
+  images: []
+  slides: ""
+
+schedule:
+  publish_at: ""
+  platforms: ["juejin", "wechat"]
