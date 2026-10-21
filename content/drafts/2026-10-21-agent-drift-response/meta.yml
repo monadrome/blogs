@@ -1,6 +1,6 @@
-title: "Agent 跑偏应对方案分析：从人工纠偏四级体系到自动蝴蝶效应"
+title: "Agent 跑偏应对：从人工纠偏四级体系到自动蝴蝶效应"
 slug: "2026-10-21-agent-drift-response"
-summary: "综合两份独立调研（社区纠偏方法 + omha 自动蝴蝶效应实现；Codex 独立网络调研），分析 Agent 跑偏归因、人工纠偏四级体系、自动化难点与两条工程实现路径。"
+summary: "从 Agent 跑偏的归因出发，梳理人工纠偏的四级体系与 Level 0 预防清单，分析自动化纠偏的四个难点，并拆解 hooks 门禁与 omha 自动蝴蝶效应两条工程路径。"
 author: "EricLin"
 created: "2026-10-21"
 language: "zh-CN"
