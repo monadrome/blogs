@@ -1,0 +1,36 @@
+title: "Agent 跑偏应对方案分析：从人工纠偏四级体系到自动蝴蝶效应"
+slug: "2026-10-21-agent-drift-response"
+summary: "综合纠偏方法调研与 omha 自动蝴蝶效应实现，分析 Agent 跑偏的归因、人工纠偏四级体系、自动化难点与工程实现边界。"
+author: "EricLin"
+created: "2026-10-21"
+language: "zh-CN"
+original: true
+
+category: "开发工具"
+tags: ["AI Coding Agent", "Claude Code", "纠偏", "omha", "蝴蝶效应", "自动化"]
+
+platforms:
+  juejin:
+    status: "draft"
+    article_id: ""
+    draft_id: ""
+    published_at: ""
+    url: ""
+  wechat:
+    status: "draft"
+    media_id: ""
+    published_at: ""
+    url: ""
+  github:
+    status: "draft"
+    commit_hash: ""
+    pushed_at: ""
+
+assets:
+  cover: ""
+  images: []
+  slides: ""
+
+schedule:
+  publish_at: ""
+  platforms: ["juejin", "wechat"]
